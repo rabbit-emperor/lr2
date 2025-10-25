@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Триколонковий макет на Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Верхнє меню -->
+    <header class="bg-gray-800 text-white p-4">
+           <nav class="container mx-auto flex justify-between items-center">
+        <!-- Лого зліва -->
+        <div class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="Лого" class="mr-2">
+            <span class="font-bold text-xl">Мій Сайт</span>
+        </div>
+
+        <!-- Навігаційні посилання справа -->
+        <div class="space-x-6">
+            <a href="#" class="hover:text-yellow-400 font-semibold">Головна</a>
+            <a href="#" class="hover:text-yellow-400 font-semibold">Про нас</a>
+            <a href="#" class="hover:text-yellow-400 font-semibold">Послуги</a>
+            <a href="#" class="hover:text-yellow-400 font-semibold">Контакти</a>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Основний контент -->
+    <main class="container mx-auto p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <section class="bg-white p-28 rounded-lg shadow text-center">
+            <h2 class="text-xl font-semibold mb-2">Колонка 1</h2>
+            <p class="mb-4">Тут якийсь текст для першої колонки.</p>
+            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-gray-800 transition">Дізнатися більше</button>
+        </section>
+
+        <section class="bg-white p-28 rounded-lg shadow text-center">
+            <h2 class="text-xl font-semibold mb-2">Колонка 2</h2>
+            <p class="mb-4">Тут якийсь текст для другої колонки.</p>
+            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-gray-800 transition">Дізнатися більше</button>
+        </section>
+
+        <section class="bg-white p-28 rounded-lg shadow text-center">
+            <h2 class="text-xl font-semibold mb-2">Колонка 3</h2>
+            <p class="mb-4">Тут якийсь текст для третьої колонки.</p>
+            <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-yellow-400 hover:text-gray-800 transition">Дізнатися більше</button>
+        </section>
+
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        Контактна інформація: email@example.com | Телефон: +380 00 000 00 00
+    </footer>
+
+</body>
+</html>
